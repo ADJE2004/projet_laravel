@@ -31,7 +31,7 @@
             <td>{{$comment->author_name}}</td>
             <td>{{$comment->post_id}}</td>
             <td>
-                <a href="#" class="btn btn-warning"><i class="bi bi-eye"></i></a>
+                
                 <a href="/modifier/{{$comment->id}}" class="btn btn-info"><i class="bi bi-pencil"></i></a>
                 <form action="{{ route('comments.delete', $comment->id) }}" method="POST" style="display:inline;">
                     @csrf
